@@ -1,0 +1,89 @@
+ACE
+###########################
+
+http://is-calculadora4ope-http-cp4i.apps.demo.ibmdte.net:80/calculadora/v1
+
+###########################
+APIC
+
+Accept	application/json
+
+X-IBM-Client-Id
+
+bc282d87ca15abf417446a54d4850919
+
+
+{
+"CalculadoraRequest": {
+"numero1": 1,
+"numero2": 789
+}
+}
+
+myapp1-multiplicar
+Key
+5d1d5792d0e16e084c89bdb92b69c315
+Secret
+6c7a3e55c5313cdae5adc2ec04b98488
+Client ID
+5d1d5792d0e16e084c89bdb92b69c315
+
+myapp2-sumar
+Key
+ed5601c16a14d945febdb4030ebefce6
+Secret
+cf4410f042b8c7fa3da7078bfc6bb022
+
+https://apic-dev-gw-gateway-cp4i.apps.demo.ibmdte.net/ibm-demos/sandbox/calculadora/v1/sumar
+
+
+
+
+
+
+
+
+
+
+#############################################################
+APIC
+
+Accept	application/json
+
+X-IBM-Client-Id
+
+bc282d87ca15abf417446a54d4850919
+
+
+{
+"CalculadoraRequest": {
+"numero1": 1,
+"numero2": 789
+}
+}
+
+myapp1-multiplicar
+Key
+5d1d5792d0e16e084c89bdb92b69c315
+Secret
+6c7a3e55c5313cdae5adc2ec04b98488
+Client ID
+5d1d5792d0e16e084c89bdb92b69c315
+
+myapp2-sumar
+Key
+ed5601c16a14d945febdb4030ebefce6
+Secret
+cf4410f042b8c7fa3da7078bfc6bb022
+
+https://apic-dev-gw-gateway-cp4i.apps.demo.ibmdte.net/ibm-demos/sandbox/calculadora/v1/sumar
+
+
+
+
+
+
+
+
+
+

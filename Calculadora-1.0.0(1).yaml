@@ -1,0 +1,106 @@
+swagger: '2.0'
+info:
+  title: Calculadora
+  version: 1.0.0
+  description: Calculadora
+paths:
+  /sumar:
+    post:
+      operationId: postSumar
+      responses:
+        '200':
+          description: The operation was successful.
+          schema:
+            $ref: '#/definitions/calculadoraResponse'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      description: Insert a sumar
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/calculadoraRequest'
+          description: The request body for the operation
+          required: true
+  /restar:
+    post:
+      operationId: postRestar
+      responses:
+        '200':
+          description: The operation was successful.
+          schema:
+            $ref: '#/definitions/calculadoraResponse'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      description: Insert a restar
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/calculadoraRequest'
+          description: The request body for the operation
+          required: true
+  /multiplicar:
+    post:
+      operationId: postMultiplicar
+      responses:
+        '200':
+          description: The operation was successful.
+          schema:
+            $ref: '#/definitions/calculadoraResponse'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      description: Insert a multiplicar
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/calculadoraRequest'
+          description: The request body for the operation
+          required: true
+  /dividir:
+    post:
+      operationId: postDividir
+      responses:
+        '200':
+          description: The operation was successful.
+          schema:
+            $ref: '#/definitions/calculadoraResponse'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      description: Insert a dividir
+      parameters:
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/calculadoraRequest'
+          description: The request body for the operation
+          required: true
+basePath: /calculadora/v1
+definitions:
+  calculadoraRequest:
+    type: object
+    properties:
+      numero1:
+        type: object
+        properties: {}
+      numero2:
+        type: integer
+  calculadoraResponse:
+    type: object
+    properties:
+      resultado:
+        type: number
+      mensaje:
+        type: string
+host: 'is-calculadora4ope-http-cp4i.apps.demo.ibmdte.net:80'
+schemes:
+  - http
